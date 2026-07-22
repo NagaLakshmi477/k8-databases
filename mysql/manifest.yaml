@@ -1,3 +1,13 @@
+apiVersion: v1
+kind: Secret
+
+metadata:
+  name: mysql
+
+type: Opaque
+
+data:
+  MYSQL_ROOT_PASSWORD: Um9ib1Nob3BAMQ==
 ---
 apiVersion: v1
 kind: Service
@@ -65,6 +75,9 @@ spec:
       containers:
       - name: mysql
         image: lakshmi1092/mysql:v1
+        envFrom:
+        - secretRef:
+          name: mysql
         volumeMounts:
         - name: mysql-data
           mountPath: /var/lib/mysql
