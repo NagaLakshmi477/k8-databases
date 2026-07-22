@@ -13,3 +13,6 @@ kubectl apply -f 01-namespace.yaml
 kubectl apply -f  manifest.yaml
 kubectl get pods
 kubectl get pvc
+
+redis
+-----

@@ -8,7 +8,7 @@ metadata:
         project: roboshop
         tier: database
 spec:
-  clusterIp: None
+  clusterIP: None
   selector:
       component: redis
       project: roboshop
@@ -70,7 +70,7 @@ apiVersion: apps/v1
 kind: StatefulSet
 metadata:
   name: redis
-  namespace: redis
+  namespace: roboshop
   labels:
     component: redis
     project: roboshop
