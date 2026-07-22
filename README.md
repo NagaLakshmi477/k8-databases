@@ -8,3 +8,4 @@ kubectl apply -k "github.com/kubernetes-sigs/aws-ebs-csi-driver/deploy/kubernete
 - adding permissions (ebs)
 - create storage class
 - we are doing dynamically
+kubectl apply -f ebs-sc.yaml
