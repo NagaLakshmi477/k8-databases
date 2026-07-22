@@ -9,3 +9,7 @@ kubectl apply -k "github.com/kubernetes-sigs/aws-ebs-csi-driver/deploy/kubernete
 - create storage class
 - we are doing dynamically
 kubectl apply -f ebs-sc.yaml
+kubectl apply -f 01-namespace.yaml
+kubectl apply -f  manifest.yaml
+kubectl get pods
+kubectl get pvc
